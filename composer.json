@@ -1,0 +1,22 @@
+{
+    "name": "qinqw/php-crypto",
+    "description": "Provides an easy and secure way to encrypt/decrypt data with PHP using the Symmetric Cryptography method.(DES,RSA)",
+    "homepage": "http://www.qinqiwei.com",
+    "license": "Apache-2.0",
+    "keywords": ["Crypt PHP DES 3DES RSA OPENSSL Qinqw"],
+    "type": "project",
+    "authors": [
+        {
+            "name": "Kevin",
+            "email": "qinqiwei@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Qinqw\\Crypto\\": "src/"
+        }
+    }
+}
