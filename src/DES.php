@@ -12,17 +12,28 @@
  */
 namespace Qinqw\Crypto;
 
+/**
+ * DES
+ * 
+ * @category PHP_Crypto
+ * @package  Qinqw\Crypto
+ * @author   Kevin <qinqiwei@hotmail.com>
+ * @license  Apache License V2
+ * @link     https://github.com/qinqw/php-crypto
+ */
 class DES
 {
     /**
-     * des-cbc加密
-     * @param string  $data 要被加密的数据
-     * @param string  $key 加密使用的key
+     * Des-cbc加密
+     *
+     * @param string $data 要被加密的数据
+     * @param string $key  加密使用的key
+     * 
+     * @return string Ciphertext
      */
     public static function encrypt($data, $key=null)
     {
-        if(strlen($key)!=8)
-        {
+        if (strlen($key)!=8) {
             $key='x#a-y6nl';
         }
         $cipher = 'des-cbc';
@@ -33,14 +44,16 @@ class DES
     }
 
     /**
-     * des-cbc解密
-     * @param string  $data 加密数据
-     * @param string  $key 加密使用的key
+     * Des-cbc解密
+     *
+     * @param string $data 加密数据
+     * @param string $key  加密使用的key
+     * 
+     * @return string Plaintext
      */
     public static function decrypt($data, $key=null)
     {
-        if(strlen($key)!=8)
-        {
+        if (strlen($key)!=8) {
             $key='x#a-y6nl';
         }
         $cipher = 'des-cbc';
